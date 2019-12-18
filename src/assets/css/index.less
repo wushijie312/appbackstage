@@ -1,0 +1,90 @@
+
+//主题色
+@themeColor:#333;
+//颜色白色
+@whiteColor:#fff;
+//颜色4492ff
+@color4492ff:#4492ff;
+//颜色222
+@color222:#222;
+//颜色141414
+@color141414:#141414;
+// 颜色f5f5f5
+@colorf5f5f5:#f5f5f5;
+// 颜色tm黑3
+@colorfTMBlock3:rgba(0,0,0,0.3);
+// 颜色tm白3
+@colorfTMWhite3:rgba(255,255,255,0.3);
+//默认头部背景颜色
+@colord9d9d9:#d9d9d9;
+// 颜色E6F7FF
+@colorE6F7FF:#E6F7FF;
+//颜色ccc
+@colorccc:#ccc;
+//颜色000c17
+@colorc17:#000c17;
+//连接颜色
+@linkColor:#4492ff;
+//按钮角度
+@borderRadiusBase:2px;
+//默认背景颜色
+body{
+    overflow-y: auto;
+}
+.loading_spin{
+    position: fixed;
+    left:50%;
+    top:50%;
+}
+.btn_gray {
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    height: 28px;
+    line-height: 28px;
+    display: inline-block;
+    margin-right: 10px;
+    padding: 0 15px;
+    color: @whiteColor;
+    font-weight: 400;
+    cursor: pointer;
+    outline: 0;
+    box-sizing: content-box;
+    background: @themeColor;
+}
+
+//ant 左侧导航颜色
+.ant-menu.ant-menu-dark .ant-menu-item-selected, .ant-menu-submenu-popup.ant-menu-dark .ant-menu-item-selected{
+    background-color:@colorfTMWhite3;
+}
+//ant 左侧导航背景色
+.ant-layout-sider,.ant-menu-dark, .ant-menu-dark .ant-menu-sub{
+    background: @color141414;
+}
+//ant 左侧导航li背景色
+.ant-menu-dark .ant-menu-inline.ant-menu-sub{
+    background: transparent;
+    box-shadow:none;
+    -webkit-box-shadow:none;
+    // background: @color222;
+}
+//ant head button颜色修改
+.ant-btn-link{
+    color:@themeColor;
+}
+//ant head 下拉框颜色修改
+.ant-dropdown-link{
+    color: @themeColor;
+}
+
+// 移动端样式
+.ant-drawer-content-wrapper{
+    width:200px!important;
+    background: #141414;
+}
+.ant-drawer-content{
+    background: transparent;
+}
+.ant-drawer-body{
+    padding:0px;
+}
